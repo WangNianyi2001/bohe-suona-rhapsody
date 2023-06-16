@@ -1,0 +1,173 @@
+\documentclass{ctexart}
+\usepackage[AutoFallBack=true]{xeCJK}
+	\setCJKmainfont{Source Han Serif SC}
+	\setCJKfallbackfamilyfont{rm}{MS Mincho}
+\usepackage{geometry}
+	\geometry{left=1in,right=1in,top=1in,bottom=1in}
+\usepackage{titling}
+\usepackage{enumitem}
+	\setlist{noitemsep,nosep}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage[symbol=$\dagger$,numberlinked=false]{footnotebackref}
+\usepackage{float,parskip}
+\usepackage{xparse}
+
+\newfontfamily\chnfont{Source Han Serif SC}
+\newfontfamily\jpfont{MS Mincho}
+\newcommand{\chn}[1]{{\chnfont #1}}
+\newcommand{\jp}[1]{{\jpfont #1}}
+
+\newcommand{\subheader}[1]{\textbf{#1}\quad}
+
+\newenvironment{lverse}
+	{
+		\par
+		\textbf{\LARGE Verse}
+		\vspace{.5em}
+		\par
+	}
+	{
+		\par
+	}
+\NewDocumentCommand{\lline}{ m m m O{} }{
+	\par
+	\begin{minipage}{\textwidth}
+		\textbf{\Large Line} \\
+		\subheader{Original}#1 \\
+		\subheader{Literal}#2 \\
+		\subheader{Translation}#3
+		\if{#4}{}
+		\else
+			\begin{quote}
+				#4
+			\end{quote}
+		\fi
+	\end{minipage}
+	\par
+	\vspace{.5em}
+	\par
+}
+
+\begin{document}
+
+\setlength{\droptitle}{-.5in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\title{
+	『ボヘ・スォナ・ラプソディー』 \\
+	{\large Japanese Translation for《波西唢呐狂想曲》}
+}
+\author{王念一}
+\maketitle
+
+\begin{section}{Background}
+\end{section}
+
+\begin{section}{Translation}
+	\begin{lverse}
+		\lline
+			{妈妈　教我吹唢呐}
+			{Mama, teaches me how to play suona}
+			{ママ　スォナを教えた}
+			[
+				\textit{Ma}, the most common topic in Chinese curse words.
+				To hurt others' feelings, you first greet their mothers. \\
+				\textit{Suo'na} (唢呐) is a traditional Chinese musical instrument which is only used in weddings or at funerals---the two biggest events of one's life. \\
+				There is an implication that it is not others but his mama who teaches him how to play suona, leading to other people's death, hence the contrast.
+			]
+
+		\lline
+			{嘟　嘟嘟嘟嘟嘟嘟　一个白字被送走啦}
+			{Dur-- du du du du du... One \textit{white name} is sent gone}
+			{ﾄﾞｩ　ﾄﾞｩﾄﾞｩﾄﾞｩﾄﾞｩﾄﾞｩ　どのシラも堕ちた}
+			[
+				The "du du" is a mimic to the sound of suona. \\
+				\textit{White name} is the calling for the fans watching Otto's live stream, since non-课金 users can only send white danmakus. \\
+				「送走」means not only "to be sent gone", but also "to be made dead".
+			]
+		\lline
+			{妈妈　我要保护你}
+			{Mama, I want to protect you}
+			{ママ　守りたい}
+			[
+				The classic comment goes "might fail to save the mama".
+			]
+		\lline
+			{可拿着唢呐不能拥抱你}
+			{But holding a suona, cannot hug you}
+			{でも両手は抱くできない}
+		\lline
+			{妈妈　呜ーー}
+			{Mama... Ooh...}
+			{ママ　ウーー}
+		\lline
+			{我要去战道　这世界还有好多人有妈妈}
+			{I wanna go fawght*, there are so many people in this world who also have their own mama}
+			{戦（いくさ）せやう　この世界中沢山のママがある}
+			[
+				In the original 鬼畜 video, the phrase「战斗」(zhan'dou) is pronunced as「战道」(zhan'dao), giving this line a special accent.
+				I'm doing a same sound shift from せよ to せやう. \\
+				Similarly, "fawght*" stands for "fight".
+				The target shall be other people's mamas. \\
+				The latter half of the line doesn't quite make sense, since everybody must have a ma.
+				But that's where the joke's at. \\
+				Classic danmaku goes「离我妈远点」(stay away from my ma).
+			]
+		\lline
+			{这世界需要我　这些妈妈也需要我}
+			{This world needs me, so do these mamas need me}
+			{必要、僕を　このママと親も}
+			[I messed around with the order of words so that they rhyme with「我」(wo).]
+	\end{lverse}
+	\begin{lverse}
+		\lline
+			{野区　住着鼻三狼}
+			{In the jungle, lives \textit{B 3th wolf}}
+			{住んで　いって三郎}
+			[
+				「野区」refers to the jungle area in \textit{League of Legends} the videogame, since Otto was once a professional LOL gamer. \\
+				「三狼」be the three NPCs living in the jungle in game. \\
+				「鼻」is a synophone of the character 「逼」(bi), which essentially means "fucking (adj.)".
+			]
+		\lline
+			{嘟　嘟嘟嘟嘟嘟嘟　唢呐送走鼻大！狼}
+			{Dur-- du du du du du... Suona sends gone \textit{B 1st! wolf}}
+			{ﾄﾞｩ　ﾄﾞｩﾄﾞｩﾄﾞｩﾄﾞｩﾄﾞｩ　払われうだ！ろう}
+			[
+				The「大」in this line is strongly accented, making a contrast with the following soft「狼」.
+				I managed to rhyme it with「だろう」.
+				They pretty much sounds the same.
+			]
+		\lline
+			{留下两条炫狗　呜呜闹}
+			{Leaves two shiny dog, annoyingly barking "woof woof"}
+			{残して犬二匹　ウウナォ}
+			[
+				「炫狗」is the nickname of Otto's ex-teammate.
+				Joke is that after you kill one of the wolves, two remain.
+			]
+		\lline
+			{走位离谱奥利安的费的初　（哇啊啊啊啊啊啊袄！）}
+			{Zouwei lipu aoli'an de fei de chu (waaaaaaaao!)}
+			{ゾヱ・リプ・オリアン・ド・フェー・ド・チュー　（ワァァァァァァォ！）}
+			[Really there is no meaning, just mimicking the original \textit{"Gonna leave you all behind and face the truth"} line, but with Otto's spoken phrases.]
+		\lline
+			{妈妈　呜ーー　（米浴说的道理～）}
+			{Mama... Ooh... (mi juy zwod ka daaw kid\~)}
+			{ママ　ウーー　（ミー・ユイ・ズォド・カー・ダウ・キド）}
+			[
+				"mi juy zwod ka daaw kid" comes from a backward played section of record of Otto singing a Cantonese song.
+			]
+		\lline
+			{我不要吹唢呐　我只想现在立刻就操你妈}
+			{I don't want to play suona, I only want to right now immediately fuck your ma}
+			{スォナ吹（ぶ）きたくない　今すぐに令堂をやれば}
+			[
+				The「吹き」lines up with the「不」here, on accent, so be it read as ぶ.
+				\textit{Grandmother's got joy.}
+			]
+	\end{lverse}
+\end{section}
+
+\end{document}
